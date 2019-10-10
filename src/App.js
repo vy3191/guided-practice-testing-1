@@ -10,7 +10,7 @@ function App(props) {
 
   // since we're not testing our side effects yet, just comment this out
   // const [images] = useDogImages(breed, count);
-  const [images] = useState([])
+  const [images] = useState([]);
 
   return (
     <>
