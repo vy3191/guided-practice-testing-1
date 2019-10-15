@@ -2,6 +2,7 @@
 
 - [The React Lifecycle](https://github.com/jsonmaur/the-dog-website/tree/the-react-lifecycle)
 - [Composing and Sharing Non-Visual Behavior](https://github.com/jsonmaur/the-dog-website/tree/non-visual-behavior)
+- [Testing Web Applications](https://github.com/jsonmaur/the-dog-website/tree/testing-web-applications)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
