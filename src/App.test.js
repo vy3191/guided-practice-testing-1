@@ -9,7 +9,7 @@ import App from "./App";
 // routine cleanup after each test runs (to reset the DOM and such)
 afterEach(rtl.cleanup);
 
-test.skip("Render the heading", () => {
+test("Render the heading", () => {
   // render our React app into an in-memory DOM so we can test against it
   const wrapper = rtl.render(<App />);
 
@@ -20,7 +20,7 @@ test.skip("Render the heading", () => {
   expect(element).toBeVisible();
 });
 
-test.skip("Render count input", () => {
+test("Render count input", () => {
   const wrapper = rtl.render(<App />);
   // using a regular expression instead of a string allows our
   // query to be much more flexible. for example, if the text becomes

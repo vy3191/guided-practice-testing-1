@@ -1,7 +1,7 @@
 import "./App.css";
-import React from "react";
+import React, { useState } from "react";
 import { useLocalStorage } from "./utils/input";
-import { useDogImages } from "./utils/api";
+// import { useDogImages } from "./utils/api";
 
 function App(props) {
   // we're calling our custom hooks here, and passing the parameters we defined in input.js
@@ -9,7 +9,8 @@ function App(props) {
   const [count, setCount] = useLocalStorage("count", 1);
 
   // since we're not testing our side effects yet, just comment this out
-  const [images] = useDogImages(breed, count);
+  // const [images] = useDogImages(breed, count);
+  const [images] = useState([])
 
   return (
     <>
