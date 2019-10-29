@@ -25,6 +25,6 @@ test("Render count input", () => {
   // using a regular expression instead of a string allows our
   // query to be much more flexible. for example, if the text becomes
   // all uppercase, we don't want our test to break
-  const element = wrapper.getByPlaceholderText(/image count/i);
+  const element = wrapper.getByPlaceholderText(/count/i);
   expect(element).toHaveValue(1);
 });
