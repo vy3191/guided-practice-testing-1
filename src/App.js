@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState } from "react";
+import React from "react";
 import { useLocalStorage } from "./utils/input";
 import { useDogImages } from "./utils/api";
 
@@ -9,8 +9,7 @@ function App(props) {
   const [count, setCount] = useLocalStorage("count", 1);
 
   // since we're not testing our side effects yet, just comment this out
-  // const [images] = useDogImages(breed, count);
-  const [images] = useState([]);
+  const [images] = useDogImages(breed, count);
 
   return (
     <>

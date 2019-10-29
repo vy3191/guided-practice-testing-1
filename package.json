@@ -1,27 +1,23 @@
 {
   "name": "the-dog-website",
-  "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --no-watchman --watchAll=false",
+    "test": "react-scripts test --env=jsdom --no-watchman --watchAll=false",
     "eject": "react-scripts eject",
-    "format": "prettier --write 'src/**/*.{js,css}'"
+    "format": "prettier --write '**/*.{js,json,css}'"
   },
   "dependencies": {
     "axios": "0.19.0",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2"
+    "react": "16.11.0",
+    "react-dom": "16.11.0"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "4.1.2",
+    "@testing-library/jest-dom": "4.2.0",
     "@testing-library/react": "9.3.0",
     "prettier": "1.18.2",
     "react-scripts": "3.2.0"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
